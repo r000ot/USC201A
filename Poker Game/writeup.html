@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>HW1: Playing Poker</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF">
+
+
+<center><h2><font color="green">The Standard Poker Game</font></h2></center>
+
+<hr>
+
+<h4>The Rules of Poker:</h4>
+<p>Poker uses a standard pack of 52 playing cards.  The card ranking is as follows Ace (the highest), King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2 (the lowest).</p>
+<p>There are four suits (spades, hearts, diamonds and clubs).  No
+suit is higher than another. All poker hands contain five cards, the highest
+hand wins. The suit has no impact on value.</p>
+<p>We won't be using wild cards in this game.</p>
+<p>Ranking of the hands:
+<ul>
+<li><b>Straight Flush.</b> A straight flush is a
+straight (5 cards in order, such as 7-8-9-10-J) that are all of the same suit.
+An Ace high straight-flush is called a Royal Flush and is the highest natural hand.<p>
+<li><b>Four of a Kind.</b> Four cards of the same value, for example four Aces
+or four tens. If there are two or more hands that qualify, the hand with the higher-rank four of a kind wins.<p>
+<li><b>Full House.</b> A full house is three cards of the same value and a pair,
+for example Q-Q-Q-5-5. When there are two full houses, the tie is broken by
+the three of a kind.  An example would be J-J-J-5-5 would beat 9-9-9-K-K.<p>
+<li><b>Flush.</b> A flush is a hand where all five cards are of the same suit, for example A-K-10-4-2, all of Diamonds. When flushes ties, the tie is broken
+by the High Card.<p>
+<li><b>Straight.</b> Five cards with consecutive values, but not of the same suit.  An example of a straight is 2-3-4-5-6. When two straights tie, the highest straight wins, K-Q-J-10-9 would beat 5-4-3-2-A.  If two straights have the same value, A-K-Q-J-10 vs A-K-Q-J-10, the pot is split.<p>
+<li><b>Three of a Kind.</b> Three cards of the same. Once
+again the highest ranking three of a kind would win.  K-K-K-2-4 would beat
+Q-Q-Q-2-3.<p>
+<li><b>Two Pair.</b> Two distinct pairs of card and a 5th card. The highest ranking pair wins. If both hands have the same high pair, the second pair wins. If both hands have the same pairs, the high card wins.<p>
+<li><b>Pair.</b> Two cards of the same value and three distinct cards.  Highest ranking pair wins.  High card breaks ties.<p>
+<li><b>High Card.</b> When a hand doesn't even have a pair, then it comes down to who is holding the highest ranking card.  If there is a tie for the high card then the next high card determines the pot, if that card is a tie than it continues down till the third, fourth, and fifth card.  The High card is also used to break ties when the high hands both have the same type of hand (pair, flush, straight, etc). </LI>
+</ul>
+
+<hr>
+<h4>Assignment:</h4>
+
+<p>You randomly draw a set of 5 cards and compute its hand rank. For example, if those five cards are
+<dir><pre>
+two of Diamond
+three of Spade
+four of Diamond
+five of Club
+six of Diamond
+</pre></dir>
+you should print "Hand evaluation: Straight" to the console.
+
+
+<h5>Card class</h5>
+<ul>
+
+<p>You are to design the <b>Card</b> class.  The class has two fields
+<blockquote><pre>
+private int suit;
+private int value;
+</pre></blockquote>
+
+a constructor
+
+<blockquote><pre>
+public Card(int suit, int value)
+</pre></blockquote>
+
+and the following methods:
+
+<blockquote><pre>
+public int getSuit()
+public int getValue()
+public boolean isValidValue(int val)
+public boolean isValidSuit(int suit)
+private String valueToString(int val)
+private String suitToString(int suit)
+public String toString()
+</pre></blockquote>
+</ul>
+
+<h5>Deck class</h5>
+<ul>
+
+<p>You are to design the <b>Deck</b> class.  The class has two fields
+<blockquote><pre>
+private Card[] cards
+private Random rand;
+</pre></blockquote>
+
+
+a constructor
+<blockquote><pre>
+public Deck()
+</pre></blockquote>
+
+
+and methods
+<blockquote><pre>public Card getRandomCard()</pre>
+<p>the method returns a card with a random choice of a suit and a value.</p>
+    <pre>public Card[] getRandomFiveCards()</pre>
+<p>the method returns five random (but distinctive) cards.</p>
+   <pre>public String toString()</pre>
+<p>the method returns a string representation of the deck.</p></blockquote>
+</ul>
+
+
+<h5>PokerHand class</h5>
+<ul>
+
+<p>You are to design the <b>PokerHand</b> class. As the minimum requirement, the  class should have a constructor
+<blockquote><pre>
+public PokerHand(Card[] h)
+</pre></blockquote>
+
+and a method
+<blockquote><pre>
+public String evaluate()</pre>
+<p>The method evaluates the hand rank. Feel free to add any methods. I advise you to implement one helper method for each rank.
+</blockquote></ul>
+
+
+<h5>MainDriver class</h5>
+Theis class is provided to you for the purpose of testing.
+<ul>
+
+</ul>
+
+
+<hr>
+
+<h4>Nitty-gritty:</h4>
+<OL>
+<li>You must follow the above specification.
+<li>Feel free to add any methods, fields and constants to all classes.
+<li>When you randomly draw five cards, make sure that there are no two
+identical cards.
+<li>You need to comment your code.
+<li>The modularity is a big deal when you implement <code>evaluate()</code>. You have to split your code into several helper methods, otherwise it becomes very difficult to debug and correct.
+<li>Don't rush on to the next stage unless the previous one works reasonably well.
+<li>See <i>output.txt</i> for a likely output.
+</OL>
+
+
+<hr>
+<h4>Handing in your solution:</h4>
+<p>TBD
+<hr>
+</p>
+
+<ul>Victor S. Adamchik,
+<br>Computer Science Department,
+<br>University of Southern California, Los Angeles, CA.
+<ul>
+</body>
+</html>

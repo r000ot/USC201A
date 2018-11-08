@@ -1,0 +1,72 @@
+Welcome!
+Shuffling started...
+Shuffling finished
+
+Deck:
+
+Three of Hearts,
+Eight of Spades,
+Six of Spades,
+Two of Clubs,
+Ace of Spades,
+Jack of Hearts,
+King of Spades,
+Four of Spades,
+Seven of Clubs,
+Seven of Hearts,
+Nine of Spades,
+Eight of Clubs,
+Queen of Diamonds,
+Four of Diamonds,
+Queen of Clubs,
+Four of Hearts,
+Queen of Hearts,
+Six of Hearts,
+Jack of Clubs,
+Ten of Diamonds,
+Six of Clubs,
+Five of Spades,
+Three of Clubs,
+Jack of Diamonds,
+Three of Diamonds,
+Five of Diamonds,
+Three of Spades,
+Ace of Clubs,
+Ten of Spades,
+Eight of Hearts,
+Two of Hearts,
+Seven of Diamonds,
+Five of Hearts,
+Two of Spades,
+King of Diamonds,
+King of Clubs,
+Nine of Clubs,
+Four of Clubs,
+Ace of Diamonds,
+Jack of Spades,
+Ten of Hearts,
+Two of Diamonds,
+Ace of Hearts,
+King of Hearts,
+Eight of Diamonds,
+Seven of Spades,
+Nine of Diamonds,
+Five of Clubs,
+Six of Diamonds,
+Queen of Spades,
+Ten of Clubs,
+Nine of Hearts,
+ 
+Dealing started...
+Dealing finished
+
+Random Hand:
+
+Three of Hearts
+Eight of Spades
+Six of Spades
+Two of Clubs
+Ace of Spades
+
+
+EVALUATION: High Card
